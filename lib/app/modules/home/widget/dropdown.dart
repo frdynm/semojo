@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:dropdown_search/dropdown_search.dart';
+import 'package:semojo/app/routes/app_pages.dart';
 
 class Dropdown extends StatelessWidget {
   const Dropdown({
@@ -28,7 +29,7 @@ class Dropdown extends StatelessWidget {
           ),
         ),
         InkWell(
-          onTap: () => print("tombol di klik"),
+          onTap: () => Get.offAllNamed(Routes.LOGIN),
           child: Container(
               width: 25,
               height: 25,

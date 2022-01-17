@@ -112,7 +112,7 @@ class LoginView extends GetView<LoginController> {
                 width: Get.width,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () => authC.login(),
+                  onPressed: () => print("tombol di klik"),
                   child: Text(
                     "Masuk",
                     style: TextStyle(fontSize: 20),
@@ -133,7 +133,9 @@ class LoginView extends GetView<LoginController> {
               Divider(),
               Container(
                   width: Get.width,
-                  child: SignInButton(Buttons.Google, onPressed: () {})),
+                  child: SignInButton(Buttons.Google, onPressed: () {
+                    authC.loginGoogle();
+                  })),
               SizedBox(
                 height: 5,
               ),

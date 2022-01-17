@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "587226467162",
+    "project_id": "semojo-frdynurm",
+    "storage_bucket": "semojo-frdynurm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587226467162:android:5b1adaaee764393d1c8163",
+        "android_client_info": {
+          "package_name": "com.frdynurm.semojo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587226467162-no0bo9kmohjjrt282cbecoptqsne51jo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.frdynurm.semojo",
+            "certificate_hash": "94dd39b45aa280d93f84791b35713785b813d82c"
+          }
+        },
+        {
+          "client_id": "587226467162-u1h8q03jcj2oo1sr8kihhjqgp3vpgn7k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiOXUFXAsY1VUC6wc9_9crnJYCK_020x8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587226467162-u1h8q03jcj2oo1sr8kihhjqgp3vpgn7k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
