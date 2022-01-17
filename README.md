@@ -1,16 +1,9 @@
-# semojo
+Semojo adalah aplikasi sewa motor / mobil mdi daerah jogjakarta aplikasi dibangun menggunakan flutter serta menggunakan patern getx
 
-A new Flutter project.
+tampilan awal
 
-## Getting Started
+![image](https://user-images.githubusercontent.com/37091537/149060105-c4c1201c-24e5-4f18-ae8a-b5a2a0d5a0a1.png)
 
-This project is a starting point for a Flutter application.
+tampilan registrasi
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![image](https://user-images.githubusercontent.com/37091537/149060172-4926bc35-de79-4402-9e08-7e99e3892f0a.png)
