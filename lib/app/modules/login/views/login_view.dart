@@ -8,6 +8,7 @@ import '../controllers/login_controller.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 class LoginView extends GetView<LoginController> {
+  final authC = Get.put(LoginController(), permanent: true);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -111,9 +112,7 @@ class LoginView extends GetView<LoginController> {
                 width: Get.width,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {
-                    Get.to(HomeView());
-                  },
+                  onPressed: () => authC.login(),
                   child: Text(
                     "Masuk",
                     style: TextStyle(fontSize: 20),

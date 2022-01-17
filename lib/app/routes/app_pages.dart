@@ -8,6 +8,8 @@ import 'package:semojo/app/modules/otp/bindings/otp_binding.dart';
 import 'package:semojo/app/modules/otp/views/otp_view.dart';
 import 'package:semojo/app/modules/register/bindings/register_binding.dart';
 import 'package:semojo/app/modules/register/views/register_view.dart';
+import 'package:semojo/app/modules/semua/bindings/semua_binding.dart';
+import 'package:semojo/app/modules/semua/views/semua_view.dart';
 
 part 'app_routes.dart';
 
@@ -36,6 +38,11 @@ class AppPages {
       name: _Paths.OTP,
       page: () => OtpView(),
       binding: OtpBinding(),
+    ),
+    GetPage(
+      name: _Paths.SEMUA,
+      page: () => SemuaView(),
+      binding: SemuaBinding(),
     ),
   ];
 }

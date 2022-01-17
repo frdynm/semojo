@@ -3,18 +3,11 @@ import 'package:get/get.dart';
 class LoginController extends GetxController {
   //TODO: Implement LoginController
 
-  final count = 0.obs;
-  @override
-  void onInit() {
-    super.onInit();
-  }
+  var isAuth = false.obs;
 
-  @override
-  void onReady() {
-    super.onReady();
-  }
+  void login() {
+    print("fungsi berjalanan");
 
-  @override
-  void onClose() {}
-  void increment() => count.value++;
+    //check berhasil login atau tidak
+  }
 }
