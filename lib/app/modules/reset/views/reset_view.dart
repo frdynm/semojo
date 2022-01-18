@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:semojo/app/modules/otp/views/otp_view.dart';
 
-import '../controllers/register_controller.dart';
+import '../controllers/reset_controller.dart';
 
-class RegisterView extends GetView<RegisterController> {
-  final daftarC = Get.put(RegisterController());
-
+class ResetView extends GetView<ResetController> {
+  final resetP = Get.put(ResetController());
   TextEditingController Dnama = TextEditingController();
-  TextEditingController Dpassword = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +21,7 @@ class RegisterView extends GetView<RegisterController> {
             height: 50,
           ),
           Text(
-            "Buat Akunmu dan nikmati sewa motor di yogyakarta dengan mudah",
+            "Akun anda lupa password? silahkan isi ulang agar anda dapat mereset kembali akun anda",
             textAlign: TextAlign.start,
             style: TextStyle(
                 color: Colors.black,
@@ -57,36 +55,6 @@ class RegisterView extends GetView<RegisterController> {
                     borderRadius: BorderRadius.all(Radius.circular(10)))),
           ),
           SizedBox(
-            height: 10,
-          ),
-          Text(
-            "Password",
-            style: TextStyle(
-                color: Colors.black26,
-                fontSize: 15,
-                fontWeight: FontWeight.w500,
-                fontStyle: FontStyle.normal),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          TextFormField(
-            controller: Dpassword,
-            obscureText: true,
-            decoration: InputDecoration(
-                // focusedborder == ketika di klik nanti mau di apain si outline nya
-                focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.green, width: 1.0)),
-                labelStyle: TextStyle(color: Colors.black),
-                suffixIcon: Icon(
-                  Icons.password_rounded,
-                  color: Colors.black,
-                ),
-                hintText: "Password",
-                border: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(10)))),
-          ),
-          SizedBox(
             height: 20,
           ),
           Container(
@@ -94,11 +62,11 @@ class RegisterView extends GetView<RegisterController> {
             height: 50,
             child: ElevatedButton(
               onPressed: () {
-                daftarC.register(Dnama.text, Dpassword.text);
+                resetP.resetPassword(Dnama.text);
                 // Get.to(OtpView());
               },
               child: Text(
-                "Buat Akun",
+                "Reset password",
                 style: TextStyle(fontSize: 15, fontStyle: FontStyle.normal),
               ),
               style: ElevatedButton.styleFrom(primary: Colors.green),

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:semojo/app/modules/home/views/home_view.dart';
 import 'package:semojo/app/modules/register/views/register_view.dart';
+import 'package:semojo/app/modules/reset/views/reset_view.dart';
 import '../controllers/login_controller.dart';
 
 import 'package:flutter_signin_button/flutter_signin_button.dart';
@@ -98,13 +99,16 @@ class LoginView extends GetView<LoginController> {
               ),
               Container(
                 alignment: Alignment.topRight,
-                child: Text(
-                  "Lupa Sandi ?",
-                  style: TextStyle(
-                      color: Colors.black26,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w500,
-                      fontStyle: FontStyle.normal),
+                child: InkWell(
+                  onTap: () => Get.to(ResetView()),
+                  child: Text(
+                    "Lupa Sandi ?",
+                    style: TextStyle(
+                        color: Colors.black26,
+                        fontSize: 15,
+                        fontWeight: FontWeight.w500,
+                        fontStyle: FontStyle.normal),
+                  ),
                 ),
               ),
               SizedBox(
