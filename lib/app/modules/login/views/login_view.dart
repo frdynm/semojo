@@ -9,6 +9,7 @@ import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 class LoginView extends GetView<LoginController> {
   final authC = Get.put(LoginController(), permanent: true);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,6 +46,7 @@ class LoginView extends GetView<LoginController> {
                 height: 10,
               ),
               TextFormField(
+                controller: authC.emailLogin,
                 decoration: InputDecoration(
                     // focusedborder == ketika di klik nanti mau di apain si outline nya
                     focusedBorder: OutlineInputBorder(
@@ -74,6 +76,7 @@ class LoginView extends GetView<LoginController> {
                 height: 10,
               ),
               TextFormField(
+                controller: authC.passwordLogin,
                 //obsecure itu ketika di klik maka text berubah menjadi bintang
                 obscureText: true,
                 decoration: InputDecoration(
@@ -112,7 +115,7 @@ class LoginView extends GetView<LoginController> {
                 width: Get.width,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () => print("tombol di klik"),
+                  onPressed: () => authC.Login(),
                   child: Text(
                     "Masuk",
                     style: TextStyle(fontSize: 20),
@@ -139,9 +142,7 @@ class LoginView extends GetView<LoginController> {
               SizedBox(
                 height: 5,
               ),
-              Container(
-                  width: Get.width,
-                  child: SignInButton(Buttons.Facebook, onPressed: () {})),
+
               SizedBox(
                 height: 10,
               ),

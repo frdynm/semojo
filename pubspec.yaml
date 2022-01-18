@@ -16,9 +16,11 @@ dependencies:
   persistent_bottom_nav_bar: 4.0.2
   firebase_core: 1.11.0
   google_sign_in: 5.2.3
+  firebase_auth: ^3.3.5
+  get_storage: 2.0.3
+  flutter_facebook_auth: 4.0.1
   flutter: 
     sdk: flutter
-  firebase_auth: ^3.3.5
 
 dev_dependencies: 
   flutter_lints: ^1.0.0
